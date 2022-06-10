@@ -1,6 +1,50 @@
 /*stylesheet*/
 
+/*
+
+Tiers of cascading styles
+
+Importance - 
+
+1 transition
+2 !important
+3 animation
+4 normal
+
+origin
+website
+user
+browser
+
+specificity
+inline > id > class > type
+
+position
+top to bottom
+
+*/
+
 body{
 	background-color: #e6e6e6;
 	Color: #333333;
+}
+
+h1#main-headline {
+	font-size: 48px;
+	color: green;
+	font-weight: 800;
+}
+
+h1.main-headline {
+	font-size: 48px;
+	color: red;
+	font-weight: 800;
+}
+
+h1,h2,h3,h4 {
+	margin: 0;
+}
+
+p {
+color: purple !important;
 }
