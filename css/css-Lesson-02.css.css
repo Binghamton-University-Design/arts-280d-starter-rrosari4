@@ -1,0 +1,63 @@
+/*stylesheet*/
+
+
+body {
+	background: #bc6c25;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#wrapper {
+	margin: 2em auto;
+	max-width: 960px;
+	padding: 0 20px;
+}
+
+.article {
+	padding: 60px 0 20px 0;
+	background-color: #fff;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 60px 0;
+}
+
+h1, p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+p.byline {
+	color: #666;
+	font-size: 14px;
+}
+
+h1 {
+	color: brown;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 0;
+}
+
+h2 {
+	margin: 20px;
+	color: sandybrown;
+}
+
+.article a {
+	color: saddlebrown;
+}
+
+.article a:hover {
+	text-decoration: none;
+}
