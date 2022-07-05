@@ -1,8 +1,9 @@
-s(document).ready(funtional) {(
+$(document).ready(function() {
 
-var $hamburger = s(".hamburger");
-	$hamburger.on("click", function(e){
-		$hamburger.toggleClass("is-active");
-		s('#nav').togglClass('active');
-	});
-});
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    $('#nav').toggleClass('active');
+  });
+
+}); 

@@ -1,6 +1,12 @@
+/*vars*/
+:root {
+	--background-color: #fff;
+	--body-color: #111;
+}
+
 body {
-	background-color: #ffffff;
-	color: #333333;
+	background-color: var(--background-color);
+	color: var(--body-color);
 	font-family: 'Roboto Mono', monospace;
 }
 
@@ -44,7 +50,7 @@ h4 {
 }
 
 #logo a{
-	color: 000;
+	color: var(--body-color);
 	text-decoration: none;
 	display: flex;
 	width: 100%;
@@ -53,21 +59,22 @@ h4 {
 }
 
 #logo h1 {
+	color: skyblue;
 	letter-spacing: 1px;
 	font-weight: 300;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 #logo svg {
-	margin-right: .25rem;
-	height: 3rem;
+	margin-right: .10rem;
+	height: 3.5rem;
 	width: auto;
 }
 
 /*Nav*/
 
 #nav a {
-	color: #000;
+	color: var(--body-color);
 	font-weight: 300;
 	letter-spacing: 2px;
 	text-decoration-color: transparent;
@@ -77,8 +84,8 @@ h4 {
 	transition: text-decoration-color .4s ease-in-out;
 }
 
-#nav a:hover {
-	text-decoration-color: #000;
+#nav a:hover, #nav a.active {
+	text-decoration-color: #0077b6;
 }
 
 #nav.active {
@@ -180,6 +187,7 @@ h4 {
     transform: rotate(-90deg);
     transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+
 /*HOME*/
 
 #intro {
@@ -188,8 +196,18 @@ h4 {
 	height: 70%;
 }
 
-#work h3 {
+#intro-holder h1 {
+	color: #003566;
+}
+
+#work h3, #writing h3, #portfolio h3 {
+	letter-spacing: 1px;
 	margin-bottom: 2rem;
+}
+
+#work h3 a, #writing h3 a, #portfolio h3 a {
+	color: #023e8a;
+	text-decoration: none;
 }
 
 .work-item {
@@ -198,7 +216,7 @@ h4 {
 	position: relative;
 	width: 100%;
 	padding-top: calc((1 / 1) * 100%);
-	background-color: #000;
+	background-color: var(--body-color);
 }
 
 .work-item .inner {
@@ -237,6 +255,76 @@ h4 {
 	height: 100%;
 }
 
+.writing-item .date-holder {
+	margin-bottom: .25em;
+}
+
+.writing-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.writing-item .caption {
+	font-size: .75rem;
+	color: #666666;
+	display: block;
+	width: 100%;
+	margin-top: .5rem;
+	margin-bottom: 2rem;
+	text-align: right;
+}
+
+.writing-item .date {
+	margin: 0;
+	font-size: .85rem;
+	padding: 0.4px;
+	color: var(--background-color);
+	display: inline-block;
+	background-color: var(--body-color);
+}
+
+.writing-item h2 a {
+	color: var(--body-color);
+	text-decoration-color: transparent;
+	transition: text-decoration-color .3s ease-in-out;
+}
+
+.writing-item h2 a:hover {
+	color: var(--body-color);
+	text-decoration-color: #0077b6;
+}
+
+.writing-item p a {
+	color:  #0077b6;
+	text-decoration-color: transparent;
+}
+
+/*PORTFOLIO + writing*/
+
+#portfolio, #writing {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#portfolio .work-item {
+	padding-top: calc((6 / 12) * 70%%);
+}
+
+#portfolio .working-item .inner .work-inside {
+	opacity: 1;
+}
+
+#portfolio p a {
+	color: var(--body-color);
+	text-decoration-color: var(--body-color);
+	transition: text-decoration-color .3s ease-in-out;
+}
+
+#portfolio p a:hover {
+	text-decoration-color: transparent;
+}
+
 /*footer*/
 
 #footer {
@@ -258,7 +346,7 @@ h4 {
 		display: block;
 	}
 	#nav {
-		border-buttom: 1px solid #000;
+		border-buttom: 1px solid var(--body-color);
 		padding-bottom: 1rem;
 		display: none;
 	}
