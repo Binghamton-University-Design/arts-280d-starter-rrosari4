@@ -285,7 +285,8 @@ h4 {
 }
 
 .writing-item h2 a {
-	color: var(--body-color);
+	font-size: 2rem;
+	color: #0096c7;
 	text-decoration-color: transparent;
 	transition: text-decoration-color .3s ease-in-out;
 }
@@ -298,6 +299,14 @@ h4 {
 .writing-item p a {
 	color:  #0077b6;
 	text-decoration-color: transparent;
+}
+
+.icon p a img {
+	style="float: left; 
+	margin: 0px 15px 15px 0px;
+	margin-top: 2.5rem;
+	width: 70%;
+	height: 70%;
 }
 
 /*PORTFOLIO + writing*/
